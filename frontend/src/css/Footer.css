@@ -8,11 +8,11 @@
     padding : 0;
     background : #14AAB4;
     color : #fff;
-    overflow-x : hidden;
+    overflow : hidden;
     letter-spacing : 2px;
     font-size : 15px;
 }
 
 .Footer {
-    overflow-x: hidden;
+    overflow: hidden;
 }

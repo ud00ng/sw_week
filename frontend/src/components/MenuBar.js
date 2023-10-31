@@ -10,9 +10,15 @@ function MenuBar() {
                     <Link to='/' className='toHome'>
                         <li><img src='/img/Logo.png'/></li>
                     </Link>
-                    <li><p>물품 등록</p></li>
-                    <li><p>물품 현황</p></li>
-                    <li><p>마켓 위치</p></li>
+                    <Link to='/upload' className='toMenu'>
+                        <li><p>물품 등록</p></li>
+                    </Link>
+                    <Link to='/upload' className='toMenu'>
+                        <li><p>물품 현황</p></li>
+                    </Link>
+                    <Link to='/upload' className='toMenu'>
+                        <li><p>마켓 위치</p></li>
+                    </Link>
                 </ul>
                 <ul className='menulist2'>
                     <li><img src='/img/notify.png'/></li>

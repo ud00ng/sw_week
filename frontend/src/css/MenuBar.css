@@ -50,7 +50,7 @@
 }
 
 .menulist1 li p:hover {
-    color : #14AAB4;
+    color : #0f7a82;
 }
 
 .menulist2 {
@@ -74,9 +74,18 @@
     font-size: 20px;
     font-family: 'Poppins';
 }
+
+.menulist2 li p:hover {
+    color : #0f7a82;  
+}
+
 .menulist2 li img{
     width : 30px;
     height : 30px;
+}
+
+.menulist2 li img:hover {
+    filter: invert(1);
 }
 
 .toLogin, .toHome {
@@ -89,4 +98,9 @@
 .toHome img {
     width : 120px;
     height : 50px;
+}
+
+.toMenu {
+    text-decoration: none;
+    color : black;
 }
