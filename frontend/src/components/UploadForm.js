@@ -1,5 +1,6 @@
 import React, { useState, useCallback, useEffect } from 'react';
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import '../css/UploadForm.css';
 
 function UploadForm() {
@@ -8,6 +9,8 @@ function UploadForm() {
     const [title, setTitle] = useState("");
     const [hashtag, setHashtag] = useState("");
     const [contents, setContents] = useState("");
+
+    const navigate = useNavigate();
 
     const handleTitleChange = (event) => {
       setTitle(event.target.value);
@@ -43,6 +46,10 @@ function UploadForm() {
             }
             
           });
+
+          if (response.status === 200) {
+            navigate('/');
+          }
         } catch (err) {
           console.error(err);
         }
@@ -83,44 +90,47 @@ function UploadForm() {
 
     return (
         <div className='UploadForm'>
-            <div className='ImageBox'>
-                {mediaFile ? (
-                  <div className='Image'>
-                    <img src={mediaFile} alt="Media" />
-                  </div>
-                ) : (
-                  <div className='UploadPrompt'>
-                    <div className='Image'>
-                      <img src="/img/gallery.png" alt="Upload Icon" />
+            <div className='ufContainer'>
+                <div className='ufTitle'>
+                    <h1>물품 등록</h1>
+                </div>
+                <div className='ufContents'>
+                    <div className='ImageBox'>
+                        {mediaFile ? (
+                          <div className='Image'>
+                            <img src={mediaFile} alt="Media" />
+                          </div>
+                        ) : (
+                          <div className='UploadPrompt'>
+                            <div className='Image'>
+                              <img src="/img/upload.png" alt="Upload Icon" />
+                            </div>
+                            <h2>이미지 드래그</h2>
+                            <label htmlFor="file-upload" className="custom-file-upload">
+                                파일 선택
+                              <input id="file-upload" type="file" onChange={handleFileChange}/>
+                            </label>
+                          </div>
+                        )}
                     </div>
-                    <h2>이미지를 여기에 드래그 하세요.</h2>
-                    <label htmlFor="file-upload" className="custom-file-upload">
-                      파일 선택
-                      <input id="file-upload" type="file" onChange={handleFileChange}/>
-                    </label>
-                  </div>
-                )}
-            </div>
-
-            <div className='upContents'>
-                <div className="ContentsBox">
-                  <div className="title">
-                    <div className='InTitle'>
-                      <p>Title</p>
-                      <input type="text" className="ttarea" placeholder="제목 입력" value={title} onChange={handleTitleChange} />
+                        
+                    <div className='upContents'>
+                        <div className='ctBox'>
+                          <p>Title</p>
+                          <input type="text" className="ttarea" placeholder="제목 입력" value={title} onChange={handleTitleChange} />
+                        </div>
+                        <div className='ctBox'>
+                          <p>HashTag</p>
+                          <input type="text" className="karea" placeholder="키워드 입력" value={hashtag} onChange={handleHashtagChange} />
+                        </div>
+                        <div className='ctBox'>
+                          <p>Contents</p>
+                          <input type="textarea" className="ctarea" placeholder="내용 입력" value={contents} onChange={handleContentsChange} />
+                        </div>
+                        <div className="CheckBtn">
+                          <button type='button' onClick={handleUpload} className='check'>등록하기</button>
+                        </div>
                     </div>
-                    <div className='InKeyword'>
-                      <p>HashTag</p>
-                      <input type="text" className="karea" placeholder="키워드 입력" value={hashtag} onChange={handleHashtagChange} />
-                    </div>
-                    <div className='InContents'>
-                      <p>Contents</p>
-                      <input type="textarea" className="ctarea" placeholder="내용 입력" value={contents} onChange={handleContentsChange} />
-                    </div>
-                  </div>
-                  <div className="CheckBtn">
-                    <button type='button' onClick={handleUpload} className='check'>Go!</button>
-                  </div>
                 </div>
             </div>
         </div>

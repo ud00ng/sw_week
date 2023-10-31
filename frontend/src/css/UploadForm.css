@@ -1,3 +1,177 @@
 .UploadForm {
+    width : 100vw;
+    height : 100vh;
+    padding : 0;
+    margin : 0;
+    left : 0;
+    top : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
     overflow-x: hidden;
+}
+
+.ufContainer {
+    width : 60%;
+    height : 70%;
+    margin : 30px 0 0 0;
+    padding : 0;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    animation: fadeUp 0.5s ease-out forwards;
+}
+
+.ufTitle {
+    width : 100%;
+    height : 10%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ufTitle h1 {
+    color : #14AAB4;
+}
+
+.ufContents {
+    width : 100%;
+    height : 80%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageBox {
+    width : 40%;
+    height : 80%;
+    padding : 0;
+    margin : 0;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #14AAB4;
+    border-radius: 20px;
+}
+
+.Image {
+    width : 100%;
+    height : 100%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Image img {
+    width : 70%;
+    height : 70%;
+    object-fit: contain;
+}
+
+.UploadPrompt {
+    width : 100%;
+    height : 50%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.UploadPrompt label {
+    position : relative;
+    left: 40px;
+}
+
+label.custom-file-upload input[type="file"] {
+    display: none;
+}
+
+label.custom-file-upload {
+    display: inline-block;
+    width : 100px;
+    height : 50px;
+    margin-right: 21%;
+    padding : 10px 0 10px 30px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #14AAB4;
+    border-color: #0aaab5;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+}
+
+label.custom-file-upload:hover {
+    background-color: #10868f;
+}
+
+.upContents {
+    width : 50%;
+    height : 100%;
+    margin : 5% 0 0 0;
+    padding : 0;
+    display : flex;
+    flex-direction: column;
+    float : left;
+    align-items: center;
+}
+
+.ctBox {
+    width : 100%;
+    margin : 0 0 15px 0;
+    padding : 0;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ctBox p {
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    margin : 0;
+    padding : 0;
+    color : #555;
+}
+
+.ctBox input {
+    width : 50%;
+    height : 50px;
+    border-radius: 10px;
+    padding-left: 10px;
+    border : 1px solid #ccc;
+}
+
+.ctBox input:active {
+    border: 1px solid #0aaab5;
+}
+
+.CheckBtn button{
+    margin-top: 10%;
+    width : 100px;
+    height : 40px;
+    color: #fff;
+    background-color: #14AAB4;
+    border-radius: 15px;
+    border: transparent;
+    cursor: pointer;
+}
+
+.CheckBtn button:hover {
+    background-color: #10868f;
 }

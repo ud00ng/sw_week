@@ -2,6 +2,7 @@ import Main from '../pages/Main';
 import Login from '../pages/Login';
 import Upload from '../pages/Upload';
 import Signup from '../pages/Signup';
+import MarketPlace from '../pages/MarketPlace';
 
 const routes = [
     {
@@ -19,6 +20,10 @@ const routes = [
     {
         path : '/signup',
         component : Signup
+    },
+    {
+        path : '/place',
+        component : MarketPlace
     }
 ];
 

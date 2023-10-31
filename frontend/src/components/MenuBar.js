@@ -16,7 +16,7 @@ function MenuBar() {
                     <Link to='/upload' className='toMenu'>
                         <li><p>물품 현황</p></li>
                     </Link>
-                    <Link to='/upload' className='toMenu'>
+                    <Link to='/place' className='toMenu'>
                         <li><p>마켓 위치</p></li>
                     </Link>
                 </ul>
