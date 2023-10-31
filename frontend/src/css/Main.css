@@ -1,0 +1,77 @@
+.MainContainer {
+    width : 100vw;
+    min-height: 100vh;
+    margin : 0;
+    padding : 0;
+    top : 0;
+    left : 0;
+    overflow-x: hidden;
+}
+
+.MainContents {
+    width : 100%;
+    min-height : 100%;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    width : 100%;
+    height : 100%;
+    padding : 0;
+    margin : 0;
+    left : 0;
+    top : 0;
+}
+
+.banner img {
+    width : 100%;
+    height : 100%;
+    object-fit: contain;
+}
+
+.bnContents {
+    position : absolute;
+    top : 25%;
+    left : 15%;
+    margin : 0;
+    padding : 0;
+    z-index : 90;
+}
+
+.bnContents p {
+    font-size: 3rem;
+    color : #000;
+    font-weight: bold;
+}
+
+.toUpload {
+    text-decoration: none;
+    display : flex;
+    align-items: center;
+    margin : 0;
+    padding : 0;
+}
+
+.StartBtn {
+    width : 150px;
+    height : 50px;
+    background-color: #79EF77;
+    margin : 0;
+    padding : 0;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.StartBtn:hover {
+    background-color: #6eda6c;
+}
+
+.StartBtn p {
+    font-size: 1.3rem;
+}

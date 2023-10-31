@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+.menubar {
+    position: fixed;
+    width : 100%;
+    min-height : 5vh;
+    padding : 0;
+    margin : 0;
+    top : 0;
+    left : 0;
+    overflow: hidden;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    background-color: transparent;
+}
+
+.header {
+    width : 90%;
+    height : 100%;
+    margin : 0;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menulist1 {
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding : 0;
+    margin : 0;
+    font-family: 'Poppins';
+}
+
+.menulist1 li {
+    margin-left: 30px;
+}
+
+.menulist1 li:hover {
+    cursor: pointer;
+}
+
+.menulist1 li p {
+    margin : 0;
+    padding : 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.menulist1 li p:hover {
+    color : #14AAB4;
+}
+
+.menulist2 {
+    display : flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+    padding : 0;
+    font-family: 'Poppins';
+}
+
+.menulist2 li {
+    margin-right: 30px;
+}
+
+.menulist2 li:hover {
+    cursor: pointer;
+}
+
+.menulist2 li p {
+    font-size: 20px;
+    font-family: 'Poppins';
+}
+.menulist2 li img{
+    width : 30px;
+    height : 30px;
+}
+
+.toLogin, .toHome {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.toHome img {
+    width : 120px;
+    height : 50px;
+}

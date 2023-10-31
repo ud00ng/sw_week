@@ -1,0 +1,28 @@
+import React from 'react';
+import '../css/MenuBar.css';
+import { Link } from 'react-router-dom';
+
+function MenuBar() {
+    return (
+        <div className='menubar'>
+            <div className='header'>
+                <ul className='menulist1'>
+                    <Link to='/' className='toHome'>
+                        <li><img src='/img/Logo.png'/></li>
+                    </Link>
+                    <li><p>물품 등록</p></li>
+                    <li><p>물품 현황</p></li>
+                    <li><p>마켓 위치</p></li>
+                </ul>
+                <ul className='menulist2'>
+                    <li><img src='/img/notify.png'/></li>
+                    <Link to='/login' className='toLogin'>
+                        <li><p>Login</p></li>
+                    </Link>
+                </ul>
+            </div>
+        </div>
+    )
+}
+
+export default MenuBar;
