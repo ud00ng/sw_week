@@ -116,15 +116,15 @@ function UploadForm() {
                         
                     <div className='upContents'>
                         <div className='ctBox'>
-                          <p>Title</p>
+                          <p>제목</p>
                           <input type="text" className="ttarea" placeholder="제목 입력" value={title} onChange={handleTitleChange} />
                         </div>
                         <div className='ctBox'>
-                          <p>HashTag</p>
+                          <p>해시태그</p>
                           <input type="text" className="karea" placeholder="키워드 입력" value={hashtag} onChange={handleHashtagChange} />
                         </div>
                         <div className='ctBox'>
-                          <p>Contents</p>
+                          <p>등록 내용</p>
                           <input type="textarea" className="ctarea" placeholder="내용 입력" value={contents} onChange={handleContentsChange} />
                         </div>
                         <div className="CheckBtn">

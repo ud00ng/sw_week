@@ -23,7 +23,7 @@ function MenuBar() {
                 <ul className='menulist2'>
                     <li><img src='/img/notify.png'/></li>
                     <Link to='/login' className='toLogin'>
-                        <li><p>Login</p></li>
+                        <li><p>로그인</p></li>
                     </Link>
                 </ul>
             </div>
